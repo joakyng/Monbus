@@ -9,6 +9,7 @@ import android.app.Activity;
 import android.app.Dialog;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.os.Looper;
 import android.text.format.Time;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -50,7 +51,6 @@ public class HorarioActivity extends Activity {
 		
 		this.lista = (ListView)findViewById(R.id.listaHorarios);
 		
-		crearPubli(); //cargar publicidad
 		
 		Bundle extras = getIntent().getExtras();
 		if(extras!=null){
@@ -126,17 +126,21 @@ public class HorarioActivity extends Activity {
 		@Override
 		protected HorariosAdapter doInBackground(Object... params) {
 			HorariosAdapter horariosAdapter = new HorariosAdapter(HorarioActivity.this, Integer.parseInt(HorarioActivity.this.strOrigen), Integer.parseInt(HorarioActivity.this.strDestino), HorarioActivity.this.strFechaIda);
+			HorarioActivity.this.adView.loadAd(new AdRequest());
 			return horariosAdapter;
 		}
 		@Override
 		protected void onPreExecute() {
 			this.dialog = dialogo();
 			this.dialog.show();
+			crearPubli();
 		}
 		@Override
 		protected void onPostExecute(HorariosAdapter result) {
 			HorarioActivity.this.lista.setAdapter(result);
 			this.dialog.dismiss();
+			
+			
 		}
 	}
 	
@@ -167,13 +171,15 @@ public class HorarioActivity extends Activity {
 	    // Iniciar una solicitud genérica para cargarla con un anuncio
 	    this.adView.loadAd(adRequest);
 	    */
-		AdView adView = (AdView)this.findViewById(R.id.adView);
-	    adView.loadAd(new AdRequest());
+		
+		this.adView = (AdView)this.findViewById(R.id.adView);
+		this.adView.loadAd(new AdRequest());
 	}
 	
 	@Override
 	  public void onDestroy() {
-	    this.adView.destroy();
+		if(this.adView!=null)
+			this.adView.destroy();
 	    super.onDestroy();
 	  }
 
