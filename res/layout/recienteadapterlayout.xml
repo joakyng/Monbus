@@ -25,7 +25,8 @@
         android:layout_alignBottom="@+id/tvRecienteOrigen"
         android:layout_toRightOf="@+id/tvRecienteOrigen"
         android:text=" → "
-        android:textAppearance="?android:attr/textAppearance" />
+        android:textAppearance="?android:attr/textAppearance"
+        android:textColor="@color/violeta_monbus" />
 
     <TextView
         android:id="@+id/tvRecienteDestino"

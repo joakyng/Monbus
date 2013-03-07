@@ -37,6 +37,7 @@ public final class R {
         public static final int red=0x7f040015;
         public static final int row_1=0x7f040019;
         public static final int row_2=0x7f04001a;
+        public static final int violeta_monbus=0x7f04001c;
         public static final int white=0x7f04000c;
         public static final int yellow=0x7f040016;
     }

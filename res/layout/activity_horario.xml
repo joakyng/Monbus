@@ -182,7 +182,7 @@
                         android:layout_height="fill_parent"
                         ads:adUnitId="a15137bf984acb6"
                         ads:adSize="BANNER"
-                        ads:testDevices="TEST_EMULATOR, 68EDAE652512332A68CA6E88901641B"
+                        ads:testDevices="68EDAE652512332A68CA6E889016412B"
                         ads:loadAdOnCreate="true"/>
 
     </LinearLayout>
