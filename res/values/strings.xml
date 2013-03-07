@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Monbus</string>
+    <string name="menu_settings">Settings</string>
+    <string name="origen">Origen</string>
+    <string name="destino">Destino</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_horario">Horario</string>
+    <string name="noInet">No hay conexion a Internet.\nActivala y vuelve a intentarlo.</string>
+    <string name="cargandoHorario">Obteniendo horario&#8230;</string>
+    <string name="de">de</string>
+    <string name="a">a</string>
+    <string name="salida">Salida</string>
+    <string name="llegada">Llegada</string>
+    <string name="duracion">Duración</string>
+    <string name="buscar">Buscar</string>
+    <string name="trayecto">Trayecto</string>
+    <string name="noDestino">Elige un origen y un destino.</string>
+    <string name="fechaAnteror">La fecha no puede ser anterior a hoy.</string>
+    <string name="deFecha">de</string>
+    <string name="recientes">Recientes</string>
+
+</resources>

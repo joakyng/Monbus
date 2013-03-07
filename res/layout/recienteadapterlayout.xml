@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/selector_backgroud_gradient" >
+
+    <TextView
+        android:id="@+id/tvRecienteOrigen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:text="Origen"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/green" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvRecienteOrigen"
+        android:layout_alignBottom="@+id/tvRecienteOrigen"
+        android:layout_toRightOf="@+id/tvRecienteOrigen"
+        android:text=" → "
+        android:textAppearance="?android:attr/textAppearance" />
+
+    <TextView
+        android:id="@+id/tvRecienteDestino"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView1"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_toRightOf="@+id/textView1"
+        android:text="Destino"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/red" />
+
+</RelativeLayout>
