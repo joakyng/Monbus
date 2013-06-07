@@ -6,5 +6,5 @@ Support 2000+ stops, internet realtime timetables, recent search, day select.
 
 In progress.
 
-Not publiished in google play
-======
+Not published in google play
+
